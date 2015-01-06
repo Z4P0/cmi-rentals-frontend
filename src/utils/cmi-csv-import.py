@@ -40,6 +40,7 @@ raw_equipment_list = []
 def write_json(filename, data_dict):
     with open(filename, "w") as outfile:
         json.dump(data_dict, outfile)
+        # json.dumps(data_dict, outfile, sort_keys=True, indent=4, separators=(',', ': '))
     print(filename + " ... done")
 
 
